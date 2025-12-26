@@ -1,0 +1,88 @@
+body {
+    height: 100vh;
+    color: white;
+    margin: 0;
+    background: linear-gradient(
+        to bottom,
+        #7ecfff 0%,
+        #b7e7ff 40%,
+        #e8f8ff 100%
+    );
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+
+.timeHead {
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    font-size: 75px;
+    /* 0 0 5px white; */
+}
+
+.dateHead {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translateX(-50%);
+    font-size: 32px;
+}
+
+
+.sun {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 75%;
+    top: 0%;
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(255,230,100,1) 0%,
+        rgb(255, 217, 0) 40%,
+        rgb(255, 200, 0) 80%
+    );
+
+    box-shadow:
+        0 0 40px rgba(255, 230, 120, 0.9),
+        0 0 80px rgba(255, 200, 50, 0.6),
+        0 0 120px rgba(255, 170, 0, 0.4);
+}
+
+.sun-inner {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    border-radius: 50%;
+
+    background-color: rgb(255, 230, 80);
+}
+
+
+.moon {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgb(232, 232, 234) 0%,
+        rgb(220, 220, 224) 50%,
+        rgb(189, 189, 194) 100%
+    );
+
+    box-shadow:
+        0 0 40px rgba(232, 232, 214, 0.9),
+        0 0 80px rgba(220, 220, 255, 0.6),
+        0 0 120px rgba(189, 219, 194, 0.4);
+}
